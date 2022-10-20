@@ -49,7 +49,8 @@ class ProgressField extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
-              Container(
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
                 width: (MediaQuery.of(context).size.width - 100) * progress,
                 height: 40,
                 decoration: BoxDecoration(
